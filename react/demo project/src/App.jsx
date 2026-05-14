@@ -1,35 +1,118 @@
-// function App() {
-//   return(
-//     <div className='App'>
-//       <h1>hello world</h1>
-//       <p>this is my first react app</p>
-//       <Cse12 />
-//     </div>
-//   );
-// }
+function App() {
+  return (
+    <div
+      style={{
+        backgroundColor: "#d3d3d3",
+        height: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <div
+        style={{
+          backgroundColor: "white",
+          padding: "30px",
+          borderRadius: "10px",
+          width: "350px",
+        }}
+      >
+        <h2
+          style={{
+            textAlign: "center",
+            marginBottom: "20px",
+          }}
+        >
+          Student Registration Form
+        </h2>
 
-// function Cse12(){
-//   return(
-//     <div className='cse12'>
-//       <h1>welcome to cse12</h1>
-//       <p>this is the second component</p>
-//     </div>
-//   );
-// }
+        <input
+          type="text"
+          placeholder="Student Name"
+          style={{
+            width: "100%",
+            padding: "10px",
+            marginBottom: "15px",
+            border: "1px solid #ccc",
+            borderRadius: "5px",
+            fontSize: "16px",
+            boxSizing: "border-box",
+          }}
+        />
 
-// export default App;
+        <input
+          type="email"
+          placeholder="Email"
+          style={{
+            width: "100%",
+            padding: "10px",
+            marginBottom: "15px",
+            border: "1px solid #ccc",
+            borderRadius: "5px",
+            fontSize: "16px",
+            boxSizing: "border-box",
+          }}
+        />
 
-import React from "react";
-import { useState } from "react";
-function app(){
-  const[isOn, setisOn]=useState(false);
-  return(
-    <div style={{textAlign:'center', marginTop:50
-    }}>
-      <h1>toggle button</h1>
-      <button onClick={()=> setisOn(isOn)}>
-      { isOn ? 'ON' :'OFF' }</button>
+        <input
+          type="password"
+          placeholder="Password"
+          style={{
+            width: "100%",
+            padding: "10px",
+            marginBottom: "15px",
+            border: "1px solid #ccc",
+            borderRadius: "5px",
+            fontSize: "16px",
+            boxSizing: "border-box",
+          }}
+        />
+
+        <input
+          type="text"
+          placeholder="Course"
+          style={{
+            width: "100%",
+            padding: "10px",
+            marginBottom: "15px",
+            border: "1px solid #ccc",
+            borderRadius: "5px",
+            fontSize: "16px",
+            boxSizing: "border-box",
+          }}
+        />
+
+        <input
+          type="tel"
+          placeholder="Mobile Number"
+          style={{
+            width: "100%",
+            padding: "10px",
+            marginBottom: "20px",
+            border: "1px solid #ccc",
+            borderRadius: "5px",
+            fontSize: "16px",
+            boxSizing: "border-box",
+          }}
+        />
+
+        <button
+          style={{
+            width: "100%",
+            padding: "10px",
+            backgroundColor: "blue",
+            color: "white",
+            border: "none",
+            borderRadius: "5px",
+            cursor: "pointer",
+            fontSize: "16px",
+          }}
+        >
+          Register
+        </button>
+      </div>
     </div>
   );
 }
-export default app;
+
+export default App;
