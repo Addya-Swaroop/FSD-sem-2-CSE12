@@ -1,0 +1,81 @@
+/* Full Page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #f5f3ff);
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Container */
+.container {
+    background: white;
+    padding: 35px;
+    width: 420px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+    text-align: center;
+}
+
+/* Heading */
+#heading {
+    color: #1e293b;
+    margin-bottom: 25px;
+    transition: 0.3s ease;
+}
+
+/* Input */
+#inputText {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    box-sizing: border-box;
+    transition: 0.3s ease;
+}
+
+#inputText:focus {
+    outline: none;
+    border-color: royalblue;
+    box-shadow: 0 0 8px rgba(65, 105, 225, 0.3);
+}
+
+/* Buttons */
+button {
+    margin: 8px 5px;
+    padding: 11px 16px;
+    border: none;
+    border-radius: 8px;
+    background: royalblue;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #244fc7;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+/* Paragraph */
+#para {
+    margin-top: 25px;
+    padding: 15px;
+    background: #f1f5f9;
+    border-radius: 10px;
+    color: #334155;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
